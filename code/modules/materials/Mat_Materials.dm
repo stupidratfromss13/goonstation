@@ -709,6 +709,23 @@ ABSTRACT_TYPE(/datum/material/metal)
 		addTrigger(TRIGGERS_ON_ADD, new /datum/materialProc/gold_add())
 
 
+/datum/material/metal/testbar
+    mat_id = "test123"
+    name = "test"
+    desc = "wow i can't believe it actually worked"
+    color = "#2e5f8d"
+    quality = 20
+
+	New()
+		..()
+		value = 500
+
+		setProperty("density", 10)
+		setProperty("hard", 2)
+		setProperty("reflective", 10)
+		setProperty("electrical", 10)
+
+
 /datum/material/metal/silver
 	mat_id = "silver"
 	name = "silver"

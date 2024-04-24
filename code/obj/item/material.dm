@@ -297,6 +297,14 @@
 	default_material = "syreline"
 	metal = 1
 
+/obj/item/raw_material/test
+	name = "Rat Test Ore"
+	desc = "is this actually gonna work"
+	material_name = "Rat Test"
+	default_material = "test123"
+	metal = 1
+	powersource = 2
+
 /obj/item/raw_material/erebite
 	name = "erebite ore"
 	desc = "A chunk of Erebite, an extremely volatile high-energy mineral."
@@ -628,6 +636,11 @@
 	desc = "A processed bar of Mauxite, a sturdy common metal."
 	default_material = "mauxite"
 	icon_state = "bar"
+
+/obj/item/material_piece/test
+    desc = "wow this actually worked?"
+    default_material = "test123"
+    icon_state = "bar"
 
 /obj/item/material_piece/molitz
 	desc = "A cut block of Molitz, a common crystalline substance."
