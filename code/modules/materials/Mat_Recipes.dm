@@ -144,6 +144,21 @@
 		if(one && two) return 1
 		else return 0
 
+/datum/material_recipe/missingtexturetest
+	name = "missing texture"
+	result_id = "missingtexturetest"
+
+	validate(var/datum/material/M)
+		var/one = 0
+		var/two = 0
+
+		for(var/datum/material/CM in M.getParentMaterials())
+			if(CM.getID() == "uqill") one = 1
+			if(CM.getID() == "molitz_b") two = 1
+
+		if(one && two) return 1
+		else return 0
+
 /datum/material_recipe/plasmasteel
 	name = "plasmasteel"
 	result_id = "plasmasteel"

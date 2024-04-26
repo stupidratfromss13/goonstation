@@ -710,11 +710,11 @@ ABSTRACT_TYPE(/datum/material/metal)
 
 
 /datum/material/metal/testbar
-    mat_id = "test123"
-    name = "test"
-    desc = "wow i can't believe it actually worked"
-    color = "#2e5f8d"
-    quality = 20
+	mat_id = "test123"
+	name = "test"
+	desc = "wow i can't believe it actually worked"
+	color = "#2e5f8d"
+	quality = 20
 
 	New()
 		..()
@@ -725,6 +725,22 @@ ABSTRACT_TYPE(/datum/material/metal)
 		setProperty("reflective", 10)
 		setProperty("electrical", 10)
 
+
+/datum/material/metal/missingtexturetest
+	mat_id = "missingtexturetest"
+	name = "missingtexture"
+	desc = "missing texture test"
+	color = "#ff00f2"
+	quality = 20
+
+	New()
+		..()
+		value = 500
+
+		setProperty("density", 10)
+		setProperty("hard", 2)
+		setProperty("reflective", 10)
+		setProperty("electrical", 10)
 
 /datum/material/metal/silver
 	mat_id = "silver"
